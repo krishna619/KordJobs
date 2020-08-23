@@ -1,0 +1,52 @@
+<div class="topnav">
+  <div class="ui huge menu">
+
+    <a class="navbar-brand" href="/">
+      <img src="assets/logo.jpg" height="150" alt="mdb logo">
+    </a>
+    <div class="ui form">
+      <div class="two fields">
+        <div class="field">
+
+        </div>
+        <div class="field">
+          <label>ENTER LOCATION</label>
+
+          <div>
+            <datalist id="suggestions">
+              <% @cities.each do |c| %>
+                <option><%= c.key(:city) %></option>
+              <% end %>
+            </datalist>
+          </div>
+          <div>
+            <input  autoComplete="on" placeholder="Location" list="suggestions"/>
+          </div>
+        </div>
+        <div class="center">
+          <div class="ui blue button">SEARCH</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="right menu">
+      <div class="item">
+        <div class="ui teal button">Log In</div>
+
+      </div>
+      <div class="item">
+        <div class="ui red button">Employer Log In</div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<section class="cover text-center">
+
+  <div class="cover-container pb-5">
+    <div class="cover-inner container">
+      <h1 class="jumbotron-heading">Find Your Kind Of <strong>Jobs</strong></h1>
+
+    </div>
+  </div>
+</section>

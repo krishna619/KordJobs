@@ -1,0 +1,27 @@
+@import "semantic-ui";
+@import 'bootstrap/dist/css/bootstrap';
+
+.topnav{
+    margin-top: -5.55rem;
+
+}
+.form{
+  margin-top: 4.35rem;
+  width: 45rem;
+
+}
+.center{
+  margin-top: 1.65rem;
+}
+
+.cover {
+  background: #2b2d34 url("h1_hero.jpg") center;
+  background-size: cover;
+  min-height: 50rem;
+  height: 8rem;
+  border-radius: 0;
+  width: 100%;
+  margin-top: -0.35rem;
+  color: black;
+
+  padding-top: 1rem; }

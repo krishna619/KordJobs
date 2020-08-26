@@ -7,7 +7,17 @@
     <div class="ui form">
       <div class="two fields">
         <div class="field">
-
+          <label>JOBS</label>
+          <div>
+            <datalist id="suggestions1">
+              <% @jobs.each do |j| %>
+                <option><%= j %></option>
+              <% end %>
+            </datalist>
+          </div>
+          <div>
+            <input  autoComplete="on" placeholder="JOBS KEWORDS" list="suggestions1"/>
+          </div>
         </div>
         <div class="field">
           <label>ENTER LOCATION</label>
@@ -15,7 +25,7 @@
           <div>
             <datalist id="suggestions">
               <% @cities.each do |c| %>
-                <option><%= c.key(:city) %></option>
+                <option><%= c[:city] + ", " + c[:state]%></option>
               <% end %>
             </datalist>
           </div>
@@ -24,6 +34,7 @@
           </div>
         </div>
         <div class="center">
+
           <div class="ui blue button">SEARCH</div>
         </div>
       </div>
@@ -31,8 +42,9 @@
     </div>
     <div class="right menu">
       <div class="item">
-        <div class="ui teal button">Log In</div>
-
+        <a href="/users/sign_in">
+        <div class="ui teal button">Sign In</div>
+        </a>
       </div>
       <div class="item">
         <div class="ui red button">Employer Log In</div>

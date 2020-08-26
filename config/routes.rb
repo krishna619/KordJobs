@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :jobs_categories
+  resources :jobs
   devise_for :users
 
   root 'jobs#index'

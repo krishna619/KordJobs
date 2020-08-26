@@ -1,12 +1,6 @@
-def group_by_state(cities)
-  states = cities.map { |city| city[:state]}.uniq
 
-  states.map do |state|
-    { state: state, cities: cities.select { |city| city[:state] == state }.map { |elem| elem[:city]} }
-  end
-end
 
-cities = [
+CITIES = [
 	{city:'Kolhapur', state:'Maharashtra'},
 	{city:'Port Blair', state:'Andaman & Nicobar Islands'},
 	{city:'Adilabad', state:'Andhra Pradesh'},
@@ -1475,5 +1469,3 @@ cities = [
 	{city:'Dharwad', state:'Karnataka'},
 	{city:'Gadag', state:'Karnataka'}
 ]
-
-CITIES = group_by_state(cities)

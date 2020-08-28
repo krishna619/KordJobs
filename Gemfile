@@ -24,6 +24,9 @@ gem 'devise'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'semantic-ui-sass'
 gem 'rolify'
+gem 'cancancan'
+
+gem 'hirb'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
